@@ -1,0 +1,30 @@
+<br>
+<br>
+<h2 class="conatiner">Publier une demande de travail en remote</h2>
+<br>
+<form [formGroup]="addDemandeForm" (ngSubmit)="addDemande()">
+
+  <div class="form-group">
+    <label for="inputAddress">Date de début</label>
+    <input type="date" id="birthday"  name="birthday" class="form-control" formControlName="DateDebut"  >
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Date de fin</label>
+    <input type="date" id="birthday" name="birthday" class="form-control" formControlName="DateFin">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">Raison</label>
+      <input type="text" class="form-control" id="inputCity" placeholder="Raison" formControlName="raison">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="inputCity">Adresse</label>
+      <input type="text" class="form-control" id="inputCity" placeholder="Adresse" formControlName="adresse">
+    </div>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary">Publier</button>
+  
+</form>
+

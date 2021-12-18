@@ -1,0 +1,50 @@
+<br>
+<br>
+<h2 class="container">Formulaire d'enregistrement </h2>
+<br>
+<form  [formGroup]="addRegistreForm" (ngSubmit)="addRegistre()">
+  
+    <div class="form-group">
+      <label for="inputAddress">Nom</label>
+      <input type="text" id="birthday" name="birthday" class="form-control"  placeholder="Nom" formControlName="nom" >
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Prenom</label>
+      <input type="text" id="birthday" name="birthday" class="form-control" placeholder="Prenom"  formControlName="prenom">
+    </div>
+    <div class="form-row">
+        <div class="form-group">
+            <label for="inputAddress">Email</label>
+            <input type="email" id="birthday" name="birthday" class="form-control"  placeholder="Email" formControlName="email" >
+          </div>
+
+          <div class="form-group">
+            <label for="inputAddress">Mot de passe</label>
+            <input type="password" id="birthday" name="birthday" class="form-control"  placeholder="Mot de passe" formControlName="password" >
+          </div>
+          <div class="mb-3">
+            <label for="disabledSelect" class="form-label">Roles</label>
+            <select id="disabledSelect" class="form-select" formControlName="roles">
+              <option >ROLE_ADMIN</option>
+              <option >ROLE_MANAGER</option>
+              <option >ROLE_MANAGERPROX</option>
+              <option >ROLE_USER</option>
+            </select>
+          </div>
+         
+          <div class="mb-3">
+            <label  for="disabledSelect" class="form-label">Type de contrat</label>
+            <select id="disabledSelect" class="form-select" formControlName="typecontrat" >
+              <option>true</option>
+              <option>false</option>
+             
+            </select>
+          </div>
+     
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Publier</button>
+  </form>
+
+
+  
